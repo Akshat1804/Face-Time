@@ -10,10 +10,14 @@ body{
     height: 100%;
 }
 
+body{
+    font-family: gilroy;
+}
+
 .main{
     width: 100%;
     height: 100%;
-    background-color: rgb(209, 239, 255);
+    background-color: rgba(255, 255, 255, 0.901);
 }
 
 nav{
@@ -22,11 +26,12 @@ nav{
     align-items: center;
     width: 100%;
     height: 5%;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(38, 38, 38);
     gap: 30px;
 }
 
-nav > h1,h2{
+nav > h1, nav > h2{
+    cursor: pointer;
     font-size: 15px;
     color: white;
 }
@@ -37,17 +42,525 @@ nav > h1,h2{
     background-color: white;
 }
 
+.nav1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.left h2{
+    color: rgb(60, 56, 163);
+    font-weight: 700;
+    font-family: EB  Garamond;
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+.left h1{
+    cursor: pointer;
+    margin-left: 28px;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.right h2{
+    cursor: pointer;
+    color: rgb(60, 56, 163);
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid rgb(60, 56, 163);
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.right h2:hover{
+    background-color: rgb(234, 238, 244);
+}
+
+
+.slider{
+    cursor: pointer;
+    width: 100%;
+    height: 5%;
+    background-color: rgb(60, 56, 163) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider h2{
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    animation: slider 0.5s linear infinite alternate;
+}
+
+.con{
+    display: flex;
+    width: 100%;
+}
+
+.conleft{
+    width: 50%;
+    height: 100%;
+}
+
+.conleft h2{
+    font-size: 48px;
+    margin-top: 40px;
+    margin-left: 50px;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+.conleft span {
+    color: rgb(60, 56, 163)
+}
+
+.conleft h1{
+    font-size: 16px;
+    margin-left:50px;
+    margin-top: 60px;
+}
+
+.btn{
+    margin-left: 50px;
+    margin-top: 80px;
+    margin-right: 70px;
+    color: rgb(60, 56, 163);
+    font-weight: 600;
+    border: 1px solid  rgb(60, 56, 163);
+    padding:  10px 20px;
+    border-radius: 20px;
+}
+
+.btn2{
+    background-color:  rgb(60, 56, 163);
+    color: white;
+    padding:  10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: 0.25s ease-in-out;
+}
+
+.btn2:hover{
+    background-color: rgb(47, 44, 133);
+    
+}
+
+
+.conright > img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.more{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.moreleft{
+    width: 35%;
+    height: 100%;
+    background-color: rgb(4, 4, 17);
+}
+
+.top{
+    width: 100%;
+    height: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: 600;
+    background-color: rgb(47, 44, 133);
+    color: white;
+}
+
+.bottom{
+    width: 100%;
+    height: 78%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 70px;
+    color:white;
+}
+
+.box{
+    width: 50%;
+    text-align: center;
+    background-color: rgb(47, 44, 133);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.box:hover{
+    font-weight: 700;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid #fff;
+}
+
+.moreright{
+    width: 70%;
+    height: 100%;
+    background-color: #f5f8fe;
+    display: flex;
+}
+
+.moreright > img{
+    margin-top: 14%;
+    width: 50%;
+
+}
+
+.data{
+    margin-top: 18%;
+    margin-left: 30px;
+}
+
+.data h1{
+    font-size: 30px;
+    color: rgb(47, 44, 133);
+    font-weight: 700;
+}
+
+.data span{
+    color: black;
+}
+
+.data p{
+    margin-top: 20px;
+}
+
+.data a {
+    color: blue;
+    font-weight: 500;
+}
+
+.data a:hover{
+    text-decoration: underline;
+}
+
+.icons{
+    display: flex;
+}
+
+.iconleft{
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(47, 44, 133) ;
+}
+
+.iconright{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(47, 44, 133);
+}
+
+.middie{
+    width: 100%;
+    height: 57%;
+    display: flex;
+}
+
+.midleft{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    background-color: #f7f7f8;
+}
+
+.midleft h1{
+    font-size: 23px;
+    margin-left: 80px;
+    font-weight: 600;
+}
+
+.midleft a{
+    font-size: 15px;
+    margin-left: 80px;
+    color: rgb(47, 44, 133);
+    font-weight: 600;
+}
+
+.blue{
+    background-color: rgb(47, 44, 133);
+    font-family: helvetica;
+}
+
+.blue h1{
+    margin-left: 60px;
+    padding-top: 90px;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+}
+
+.blue h2{
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: 20px;
+    color: white;
+}
+
+.blue button{
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: 20px;
+    color: white;
+    background-color: #0b5cff;
+    padding: 5px 20px;
+    border-radius: 30px;
+    transition: 0.25s ease-in-out;
+}
+
+.blue button:hover{
+    background-color: black;
+    color: #0b5cff;
+
+}
+
+.blue h3{
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.416);
+    padding-bottom: 40px;
+}
+
+.effects{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.effleft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.effleft h1{
+    font-size: 40px;
+    margin-left: 50px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.effleft h2{
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.effleft button{
+    font-size:18px;
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: rgb(47, 44, 133);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+.effright{
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.efl{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.ebox{
+    cursor: pointer;
+    width: 300px;
+    height: 140px;
+    border: 1px solid  #0b5cff51;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s ease-in-out;
+}
+
+.ebox h1{
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.ebox:hover{
+    color: #0b5cff;
+    border: 1px solid  #0b5cff;
+    box-shadow: rgba(11, 92, 255, 0.25) 0px 13px 27px -5px, rgba(11, 92, 255, 0.3) 0px 8px 16px -8px;
+
+}
+
+.efr{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+
+
+
+
+
+
+.foot{
+    width: 100%;
+    height: 30%;
+}
+
+.footer{
+    width: 100%;
+    height: 70%;
+    background-color: rgb(32, 32, 32);
+    border-top: 8px solid   #0b5cff;
+
+    display: flex;
+    color: white;
+}
+
+.lefttt{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: left;
+    padding-top: 40px;
+}
+
+.midlefttt{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: left;
+    padding-top: 40px;
+
+}
+
+.midrighttt{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: left;
+    padding-top: 40px;
+}
+
+.righttt{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: left;
+    padding-top: 40px;
+}
+
+.border{
+    border: 1px solid transparent;
+    border-bottom: 1px solid   #0b5cff;
+
+    padding-bottom: 5px;
+
+}
+
+.width{
+    width: 20%;
+}
+
+.width2{
+    width: 30%;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes slider {
+    from{
+        color: rgb(255, 12, 12);
+    }
+    tp{
+        color: white;
+    }
+    
+}
+
+
 @media    (min-width: 320px) and (max-width: 480px) {
     
     nav{
         width: 100%;
         height: 3%;
         display: flex;
-        justify-content: center;
+        justify-content: right;
+        align-items: center;
     }
 
-    nav h1{
-        visibility: hidden;
+    nav h1, .left h1, .conleft h1{
+        display: none;
     }
 
     nav h2{
@@ -55,8 +568,309 @@ nav > h1,h2{
     }
 
     .hr{
-        width: 0.2px;
-        height: 5px;
+       visibility: hidden;
+    }
+
+    .nav1{
+        height: 9%;
+    }
+
+    .left h2{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    .right h2{
+        font-size: 12px;
+        margin-right: 10px ;
+        font-weight: 600;
+    }
+
+    .slider{
+        width: 100%;
+        height: 4%;
+    }
+
+    .slider h2{
+        font-size: 8px;
+    }
+
+
+    .conleft{
+        width: 80%;
+    }
+
+    .conleft h2{
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .btns{
+        display: flex;
+    }
+
+    .btn{
+        margin-top: 20px;
+        font-size: 8px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .btn2{
+        margin-top: 20px;
+        height: 10%;
+        font-size: 8px;
+        padding: 10px 20px;
+        margin-left: 20px;
+    }
+
+    .conright{
+        display: none;
+    }
+
+    .more{
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .moreleft{
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
+    }
+
+    .top h1{
+        font-size: 20px;
+    }
+
+    .bottom{
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 20px ;
+    }
+
+    .bottom h1{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        font-size: 10px;
+    }
+
+    .scroll{
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+
+    }
+
+    .scroll h1{
+        margin-right: 30px;
+        padding: 0px 20px;
+        font-size: 8px;
+    }
+
+    .scroll::-webkit-scrollbar{
+        visibility: hidden;
+    }
+
+    .moreright {
+        width: 100%;
+        height: 45%;
+    }
+    
+    .moreright > img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .data h1{
+        font-size: 17px;
+    }
+
+    .data p{
+        font-size: 11px;
+    }
+
+    .icons{
+        font-size: 9px;
+    }
+    
+    .middie{
+        margin-top: -47%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .midleft{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .midleft h1{
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .midleft a{
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    .blue h1{
+        padding-top: 20px;
+        margin-left: 30px;
+        font-size:  19px;
+    }
+
+    .blue h2{
+        font-size: 9px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .blue button{
+        font-size: 9px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .blue h3{
+        font-size: 7px;
+        margin-left: 30px;
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .effects{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .effleft{
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .effleft h1{
+        margin-top: 30px;
+        margin-left: 20px;
+        line-height: 25px;
+        font-size: 18px;
+    }
+
+    .effleft h2{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+    .effleft button{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 12px;
+    }
+
+    .effright{
+        width: 100%;
+        display: flex;
+    }
+
+    .ebox{
+    
+        width: 129px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .efl{
+        margin-top: -60px;
+        gap: 10px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .efr{
+        gap: 10px;
+        margin-top: -60px;
+        justify-content: start;
+    }
+
+    .ebox h1{
+        font-size: 8px;
+        letter-spacing: 0px;
+    }
+
+    .footer{
+        width: 100%;
+        height: 65em;
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    .lefttt{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
+        padding-top: 40px;
+    }
+
+    .lefttt h1 , .midlefttt h1 , .midrighttt h1 , .righttt h1 , .icon{
+        margin-left: 30px;
+    }
+  
+    .midlefttt{
+        width: 100%;
+        height: 100%;
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-top: -80px;
+    }
+
+
+
+    .midrighttt{
+        width: 100%;
+        height: 100%;
+        padding-top: 0px;
+        margin-top: -80px;
+
+
+    }
+
+    .righttt{
+        width: 100%;
+        height: 100%;
+        margin-top: -280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon{
+        margin-left: -70px;
+        gap: 30px;
+        font-size: 30px;
+    }
+
+    .width{
+        width: 25%;
     }
 
 }
