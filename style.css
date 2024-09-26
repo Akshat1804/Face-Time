@@ -363,13 +363,11 @@ nav > h1, nav > h2{
 
 .effects{
     width: 100%;
-    height: 100%;
     display: flex;
 }
 
 .effleft{
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -401,8 +399,8 @@ nav > h1, nav > h2{
 }
 
 .effright{
+    margin-top: 50px;
     width: 50%;
-    height: 100%;
     display: flex;
 }
 
@@ -441,8 +439,8 @@ nav > h1, nav > h2{
 }
 
 .efr{
-    width: 50%;
     height: 100%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -534,6 +532,96 @@ nav > h1, nav > h2{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sub{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.subhead{
+    width: 100%;
+    height: 10%;
+    font-size: 35px;
+    color: rgb(47, 44, 133);
+    font-weight: 600;
+    text-align: center;
+}
+
+.subhead h2{
+    display: none;
+}
+
+#subbox{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.subox{
+    width: 300px;
+    height: 400px;
+    margin-left: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: 0.25s ease-in-out;
+
+}
+
+.subox:hover{
+    box-shadow: rgba(11, 92, 255, 0.25) 0px 50px 100px -20px, rgba(11, 92, 255, 0.307) 0px 30px 60px -30px, rgba(11, 92, 255, 0.348) 0px -2px 6px 0px inset;
+}
+
+.boxtop{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxtop h1{
+    font-size: 18px;
+    color: #0b5cff;
+    font-weight: 600;
+    text-decoration: underline;
+
+}
+
+.boxtop h2{
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.boxtop h3{
+    font-size: 10px;
+}
+
+.boxmid{
+    width: 100%;
+    height: 40%;
+    margin-left: 30px;
+    margin-top: 40px;
+    line-height: 35px;
+}
+
+.boxbot{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxbot button{
+    color: white;
+background-color: #0b5cff;
+padding: 10px 60px;
+/* border-radius: 30px; */
 }
 
 
@@ -779,12 +867,12 @@ nav > h1, nav > h2{
     }
 
     .effright{
+        margin-top: 50px;
         width: 100%;
         display: flex;
     }
 
     .ebox{
-    
         width: 129px;
         height: 60px;
         display: flex;
@@ -794,15 +882,15 @@ nav > h1, nav > h2{
     }
 
     .efl{
-        margin-top: -60px;
+        height: 60%;
         gap: 10px;
         display: flex;
         justify-content: start;
     }
 
     .efr{
+        height: 60%;
         gap: 10px;
-        margin-top: -60px;
         justify-content: start;
     }
 
@@ -871,6 +959,51 @@ nav > h1, nav > h2{
 
     .width{
         width: 25%;
+    }
+
+    .subhead h1{
+        display: none;
+    }
+
+    .subhead h2{
+        display: block;
+        font-size: 20px;
+        }
+
+    #subbox{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subox{
+        margin-top: 100px;
+        margin-left: 0;    
+        width: 280px;
+        height: 300px;
+
+    }
+
+    .boxtop h1{
+           font-size: 12px;
+    }
+
+    .boxtop h2{
+        font-size: 25px;
+    }
+
+    .boxtop h3{
+        font-size: 8px;
+    }
+
+    .boxmid{
+        margin-top: 0;
+        font-size: 13px;
+    }
+
+    .boxbot button{
+        margin-top: 20px;
+        font-size: 8px;
     }
 
 }
